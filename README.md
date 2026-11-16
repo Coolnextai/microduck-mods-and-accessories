@@ -15,7 +15,7 @@ Microduck is the biped robot from Pollen Robotics and Hugging Face. Around it, c
 
 This collection starts with the part of the duck you want to change. Its eight categories cover individual accessories, modifications inside larger replica projects, and the software needed to run replacement hardware. You might come looking for a calibration tray, or to compare several controller platforms. The aim is to help DIY builders find something they can make, and robotics developers find a useful starting point or a potential collaborator.
 
-The directory currently contains **52 projects**. Each entry explains the purpose, the available materials and the key development milestone, then links to the author's own project. It should be clear whether the next step is downloading a model, following a build guide, studying code or watching an experiment develop. Projects are listed once, under their primary use.
+The directory currently contains **54 projects**. Each entry explains the purpose, the available materials and the key development milestone, then links to the author's own project. It should be clear whether the next step is downloading a model, following a build guide, studying code or watching an experiment develop. Projects are listed once, under their primary use.
 
 This is an independent community collection, unaffiliated with Pollen Robotics or Hugging Face. Linked projects belong to their authors; code, CAD, models and images retain their own licenses. The header is a concept illustration, not a set of validated accessory designs.
 
@@ -36,7 +36,7 @@ This is an independent community collection, unaffiliated with Pollen Robotics o
 
 ## Ecosystem Status
 
-These observations reflect the **52 projects in this directory as of 14 November 2026**. They show a community building and testing as it goes: some modifications have reached physical robots, while others explore new structures, controller platforms and ways to interact.
+These observations reflect the **54 projects in this directory as of 16 November 2026**. They show a community building and testing as it goes: some modifications have reached physical robots, while others explore new structures, controller platforms and ways to interact.
 
 **Many accessories grow out of full replica builds.** Choosing different motors, a computer or a battery creates work elsewhere: connection boards, internal space, feet and calibration fixtures may all need to change. [Microduck-kissqy](https://github.com/kissqy/Microduck-kissqy) includes replaceable feet and revised leg supports; [CMU Microduck](https://github.com/qilinxiaoxiang/cmu-microduck) documents changes to head covers, ankles, cable clips and electronics mounts. A full-build repository can therefore be a useful source of individual parts, with a practical assembly problem behind each change.
 
@@ -136,6 +136,8 @@ Changing a controller or a joint motor often means changing wiring and software 
 
 - **[HD1910 Full Training Stack](https://github.com/howe12/MicroDuck_1910_RL)** (howe12) — Recalculates the robot mass and Feetech HD1910 actuator assumptions, then adds flat and rough-terrain tasks, 195 CPU tests and the supported ONNX export path. It is a more complete simulation-and-training workspace for an alternative motor route, not a finished hardware package: the formal 5,000-iteration run, real inertias, zero calibration and physical acceptance are still outside the published result.
 
+- **[MicroDuck Low-Cost Bus-Servo Toolchain](https://github.com/liuchongxiao/alpha-1s-servo-motor)** (liuchongxiao / liqiulong) — Flashes low-cost SAMD10 or ATmega8 bus servos with firmware that presents a Feetech SCS-compatible protocol, then provides a GUI for programming, assigning IDs, inspecting registers and bench testing. Firmware source, documentation, scripts and Mac/Windows packages are public. Protocol compatibility does not prove mechanical fit, torque, durability or whole-robot safety; first-time chip unlocking can erase the factory firmware. The GitHub repository preserves attribution to liqiulong's original Gitee project.
+
 ## Mechanical Design
 
 Making the body fit a different component, manufacturing method or scale. Some projects address local assembly problems; others redesign the whole structure.
@@ -165,6 +167,8 @@ Making the body fit a different component, manufacturing method or scale. Some p
 - **[Feetech Build Power-Bracket Clearance Mod](https://github.com/weishengwu6/microduck-build-log)** (weishengwu6) — Adds a clearance cutout to the power-support bracket so rear pins on the IMU servo do not collide with the part during assembly. The modified STEP and SolidWorks files are public, but the part has not yet been printed or fit-tested. Other mechanical files in the build log mainly come from the fanhao375 upstream project.
 
 - **[Botbuilder Braccio Duck Biped](https://github.com/eoinjordan/botbuilder)** (eoinjordan) — Rebuilds a Microduck-style printable biped around four Braccio SR431 servos, two SR311 servos, an Arduino UNO Q and a Braccio shield. Seven main printed parts, seven fit coupons, a BOM, assembly geometry and simulation material are public. With six actuated joints it is an inspired redesign rather than a drop-in 14-joint replica, and no physical standing or walking build has been shown yet.
+
+- **[Microduck Nano](https://github.com/Trainnr-AI/microduck-nano)** (Trainnr-AI) — Shrinks an XGO-Duck-derived body to roughly 0.92 scale around fifteen 9 g Feetech SCS0009 bus servos and an Arduino UNO Q. The companion CAD repository publishes a Blender assembly, BOM and assembly notes, plus six printable fit coupons for checking bearings, horns, fasteners and servo clearances before the roughly thirty robot parts are printed. Nothing has been printed or walked yet, and the design review lists problems that must be fixed before a complete build.
 
 ## Assembly Tools
 
