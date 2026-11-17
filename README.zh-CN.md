@@ -15,7 +15,7 @@ Microduck 是 Pollen Robotics / Hugging Face 的双足机器人。围绕这只�
 
 这个合集从“你想改哪一部分”出发，把这些分散的项目整理成八类。你可以来找一个校准托盘，也可以比较几条替代主控路线；既能看到独立发布的小配件，也能找到整机复刻仓库里的结构改件。目录面向想跟着制作的 DIY 用户，以及寻找技术参考、开发方向和合作对象的机器人开发者。
 
-当前收录 **54 个项目**。每个条目介绍项目的用途、可获得的资料和关键进度，并链接作者维护的原项目。希望你看完简介，就能判断下一步是下载模型、阅读教程、研究代码，还是继续关注作者的实验。独立发布的配件和综合项目均按主要用途归类，同一个项目只列一次。
+当前收录 **57 个项目**。每个条目介绍项目的用途、可获得的资料和关键进度，并链接作者维护的原项目。希望你看完简介，就能判断下一步是下载模型、阅读教程、研究代码，还是继续关注作者的实验。独立发布的配件和综合项目均按主要用途归类，同一个项目只列一次。
 
 本合集独立维护，与 Pollen Robotics / Hugging Face 无隶属关系。所收录项目归各自作者所有；代码、图纸、模型和图片分别遵循原项目许可。头图为主题概念插画，不代表已验证的配件设计。
 
@@ -36,7 +36,7 @@ Microduck 是 Pollen Robotics / Hugging Face 的双足机器人。围绕这只�
 
 ## Ecosystem Status
 
-以下是截至 **2026-11-16**、基于本目录 54 个项目形成的观察。它们呈现出一个仍在边制作、边验证的改装社区：已经有人做出了可以展示和使用的改件，也有开发者在尝试新的结构、控制平台和交互方式。
+以下是截至 **2026-11-17**、基于本目录 57 个项目形成的观察。它们呈现出一个仍在边制作、边验证的改装社区：已经有人做出了可以展示和使用的改件，也有开发者在尝试新的结构、控制平台和交互方式。
 
 **不少配件是从整机复刻中长出来的。** 社区作者选择不同的电机、主控和电池后，需要重新安排连接板、机身内部空间、脚掌和校准工具。例如 [Microduck-kissqy](https://github.com/kissqy/Microduck-kissqy) 包含可更换脚掌和腿部支撑，[CMU Microduck](https://github.com/qilinxiaoxiang/cmu-microduck) 则逐步调整头盖、脚踝、线夹和设备收纳结构。找配件时，整机仓库同样值得翻看；其中的小改件往往对应具体装配需求。
 
@@ -53,6 +53,8 @@ Microduck 是 Pollen Robotics / Hugging Face 的双足机器人。围绕这只�
 - **[Microduck 配色与贴纸预览台](https://github.com/lucienxxxxxx/microduck-console)**（lucienxxxxxx）— 在浏览器里点选身体部件，先试配颜色和预设贴纸，再决定怎样制作外观。它本身不制造零件。工具代码为 MIT；官方网格和装配数据继续遵循 CC BY-NC-SA 非商业条件。
 
 - **[Gritty 主题机器鸭](https://github.com/maddiedreese/gritty-microduck)**（maddiedreese）— 橙色毛绒、大眼睛和球衣造型的可编辑概念方案，并提供两段可复现的 MuJoCo 舞台动作。毛绒和衣服目前只是无质量、无碰撞的视觉几何，没有制作实体服装，也没有完成硬件验证。
+
+- **[Puddles 绒毛玩偶头造型](https://github.com/PuddlesDaily/Puddles)**（PuddlesDaily）— 给实体 Microduck 换上手工绒毛鸭头，再围绕这套造型建立角色设定、二维图和带走路动画的 Blender、GLB、USDZ 模型。公开三维模型用于网页、动画和游戏，不是可以打印的外壳；仓库也没有提供绒毛头纸样、材料清单或制作教程，因此目前更适合作为已经落地的外观案例和视觉参考。
 
 ## 随身挂载配件 Mounts
 
@@ -104,6 +106,8 @@ Microduck 是 Pollen Robotics / Hugging Face 的双足机器人。围绕这只�
 
 - **[DuckBuddy](https://github.com/Animan-AI/DuckBuddy)**（Animan-AI）— 沿自己的硬件路线把语音、动作和自主行为组合成陪伴体验，让鸭子听到指令后连续执行动作。配套扩展板连接音频设备、供电和电机，仓库已有语音触发动作的实机记录，部分视觉和自主任务仍在验证。接口文档公开，PCB 制造设计未公开。
 
+- **[WonderDuck 运行程序与网页控制台](https://github.com/Hiwonder/wonderduck)**（Hiwonder）— 把机器人运行程序与互链的[网页控制台](https://github.com/Hiwonder/wonderduck_studio)组合起来，提供设备状态、运动控制、动作编辑、校准和模型管理。Runtime 1.0.8 还调整了低电压恢复、增加电量提示音并改进姿态传感器校准。它从已经烧录和配置好的 WonderDuck 设备开始，没有提供完整硬件 BOM、制造图纸或从零装机教程，其他复刻版本不能默认直接安装。
+
 - **[Microduck Companion Project](https://github.com/RomdhoniZidane20/Microduck_companion_project)**（RomdhoniZidane20）— 用树莓派 4 搭建自己的 Microduck，并计划缩小参考的 Dynamixel 电机接口板，让连接电路能装进这套机身。项目目前提供技术规划和原理参考，可用于了解小机身内怎样安排电控；定制小板的制造与实机结果尚未确认。
 
 - **[microduck-opi3w](https://github.com/Jimzjy/microduck-opi3w)**（Jimzjy）— 以采用 A733 芯片的 Orange Pi Zero 3W 作为 Microduck 主控，配合 HD1910 电机，调整扩展板、接线和运行软件。仓库整理了电路设计、姿态传感器固件和部署说明，便于沿这套零件组合继续搭建。主板已能启动，整机行走仍待装配验证。
@@ -135,6 +139,8 @@ Microduck 是 Pollen Robotics / Hugging Face 的双足机器人。围绕这只�
 - **[HD1910 行走与起身基线](https://github.com/wchengming1/open-robotics)**（wchengming1）— 保留 Microduck 原始双足结构，为 HD1910 舵机补充电机参数、训练代码和行走、起身策略。项目公开 ONNX 模型、训练检查点和运行脚本，直接服务采用替代电机的复刻者。作者明确说明验证范围限于仿真，实体装机仍要解决供电、总线、关节零位和安全限制。
 
 - **[HD1910 完整训练工程](https://github.com/howe12/MicroDuck_1910_RL)**（howe12）— 按飞特 HD1910 规格重新计算整机质量和执行器参数，并加入平地、粗糙地形任务、195 项 CPU 测试与 ONNX 导出流程。它比只改一个电机参数更接近完整训练工程，但正式 5000 轮训练尚未完成，惯量仍按比例估算，也没有真机运行、零位标定或实体动作验收。
+
+- **[DuckBuddy 834 克 HD1910 训练环境](https://github.com/XXuQ/microduck-hd1910-train)**（XXuQ）— 让训练环境对应一套具体改装硬件：十五只 HD1910 舵机、2S 电池、834 克 DuckBuddy rev-a 机身和三块铝制加强件。仓库公开电机参数、49 个任务定义、模型生成脚本、一键搭建和 ONNX 部署说明，直接服务替代舵机复刻路线。它本身不是新的实体配件包，目前也没有发布训练完成的动作策略或实体鸭验证。
 
 - **[MicroDuck 低成本总线舵机工具链](https://github.com/liuchongxiao/alpha-1s-servo-motor)**（liuchongxiao / liqiulong）— 给 SAMD10 或 ATmega8 低成本总线舵机刷入兼容飞特 SCS 通信协议的固件，再用图形工具完成烧录、设 ID、查看寄存器和台架测试。固件源码、说明书、脚本及 Mac/Windows 发行包均已公开。协议兼容不代表机械尺寸、扭矩、寿命和整机安全已经适配；首次解锁芯片还可能擦除原厂固件。GitHub 仓库注明由 liuchongxiao 从 liqiulong 的 Gitee 项目迁移并保留署名。
 

@@ -15,7 +15,7 @@ Microduck is the biped robot from Pollen Robotics and Hugging Face. Around it, c
 
 This collection starts with the part of the duck you want to change. Its eight categories cover individual accessories, modifications inside larger replica projects, and the software needed to run replacement hardware. You might come looking for a calibration tray, or to compare several controller platforms. The aim is to help DIY builders find something they can make, and robotics developers find a useful starting point or a potential collaborator.
 
-The directory currently contains **54 projects**. Each entry explains the purpose, the available materials and the key development milestone, then links to the author's own project. It should be clear whether the next step is downloading a model, following a build guide, studying code or watching an experiment develop. Projects are listed once, under their primary use.
+The directory currently contains **57 projects**. Each entry explains the purpose, the available materials and the key development milestone, then links to the author's own project. It should be clear whether the next step is downloading a model, following a build guide, studying code or watching an experiment develop. Projects are listed once, under their primary use.
 
 This is an independent community collection, unaffiliated with Pollen Robotics or Hugging Face. Linked projects belong to their authors; code, CAD, models and images retain their own licenses. The header is a concept illustration, not a set of validated accessory designs.
 
@@ -36,7 +36,7 @@ This is an independent community collection, unaffiliated with Pollen Robotics o
 
 ## Ecosystem Status
 
-These observations reflect the **54 projects in this directory as of 16 November 2026**. They show a community building and testing as it goes: some modifications have reached physical robots, while others explore new structures, controller platforms and ways to interact.
+These observations reflect the **57 projects in this directory as of 17 November 2026**. They show a community building and testing as it goes: some modifications have reached physical robots, while others explore new structures, controller platforms and ways to interact.
 
 **Many accessories grow out of full replica builds.** Choosing different motors, a computer or a battery creates work elsewhere: connection boards, internal space, feet and calibration fixtures may all need to change. [Microduck-kissqy](https://github.com/kissqy/Microduck-kissqy) includes replaceable feet and revised leg supports; [CMU Microduck](https://github.com/qilinxiaoxiang/cmu-microduck) documents changes to head covers, ankles, cable clips and electronics mounts. A full-build repository can therefore be a useful source of individual parts, with a practical assembly problem behind each change.
 
@@ -53,6 +53,8 @@ A different look for Microduck: themed shells, colors, clothing and decorative p
 - **[Microduck Color and Sticker Console](https://github.com/lucienxxxxxx/microduck-console)** (lucienxxxxxx) — A browser-based preview tool for trying colors and preset stickers on individual body parts before making the modification. It does not manufacture a part. The console code is MIT; the official meshes and assembly data retain their CC BY-NC-SA non-commercial terms.
 
 - **[Gritty-Themed Microduck](https://github.com/maddiedreese/gritty-microduck)** (maddiedreese) — An editable orange-shag, googly-eye and hockey-sweater costume concept with two reproducible MuJoCo performances. The fur and clothing are massless, non-colliding visual geometry. No physical garment or hardware validation has been completed.
+
+- **[Puddles Fluffy Puppet-Head Build](https://github.com/PuddlesDaily/Puddles)** (PuddlesDaily) — A physical Microduck wearing a handmade fluffy duckling puppet head, developed into a complete character with a visual bible, 2D artwork and animation-ready Blender, GLB and USDZ models. The published 3D model is for web, animation and games rather than printing a new shell. The repository does not provide a puppet pattern, bill of materials or build guide for reproducing the real head.
 
 ## Mounts
 
@@ -104,6 +106,8 @@ Changing a controller or a joint motor often means changing wiring and software 
 
 - **[DuckBuddy](https://github.com/Animan-AI/DuckBuddy)** (Animan-AI) — Combines speech, movement and autonomous behavior into a companion experience on custom hardware, including executing a spoken sequence of actions. Its expansion board connects audio, power and motors. A physical voice-to-action demonstration is published; some vision and autonomous tasks remain under test. Interface documentation is public, but PCB manufacturing designs are not.
 
+- **[WonderDuck Runtime and Web Console](https://github.com/Hiwonder/wonderduck)** (Hiwonder) — Combines a robot runtime with a linked [browser console](https://github.com/Hiwonder/wonderduck_studio) for status, motion control, action editing, calibration and model management. Runtime 1.0.8 also changes low-voltage recovery, adds battery sounds and updates IMU calibration. It starts from an already flashed and configured WonderDuck device; these repositories do not provide a complete hardware BOM, manufacturing files or a from-scratch build guide, so other replicas should not assume drop-in compatibility.
+
 - **[Microduck Companion Project](https://github.com/RomdhoniZidane20/Microduck_companion_project)** (RomdhoniZidane20) — A Raspberry Pi 4 replica plan that proposes shrinking a reference Dynamixel interface board to fit the chosen body. Publishes technical planning and circuit references for arranging the electronics inside a small robot. Fabrication and physical results for the custom smaller board have not been confirmed.
 
 - **[microduck-opi3w](https://github.com/Jimzjy/microduck-opi3w)** (Jimzjy) — Adapts Microduck to an A733-based Orange Pi Zero 3W and HD1910 motors, adjusting the expansion board, wiring and runtime. Circuit designs, IMU firmware and deployment notes provide a starting point for this component combination. The mainboard boots; walking still awaits full assembly and validation.
@@ -135,6 +139,8 @@ Changing a controller or a joint motor often means changing wiring and software 
 - **[HD1910 Walking and Recovery Baseline](https://github.com/wchengming1/open-robotics)** (wchengming1) — Keeps the original Microduck structure while adapting motor parameters, training code and retained walking and stand-up policies for HD1910 servos. ONNX policies, checkpoints and viewer scripts are available. The documented validation is limited to simulation; a physical build still needs power, bus, calibration and safety work.
 
 - **[HD1910 Full Training Stack](https://github.com/howe12/MicroDuck_1910_RL)** (howe12) — Recalculates the robot mass and Feetech HD1910 actuator assumptions, then adds flat and rough-terrain tasks, 195 CPU tests and the supported ONNX export path. It is a more complete simulation-and-training workspace for an alternative motor route, not a finished hardware package: the formal 5,000-iteration run, real inertias, zero calibration and physical acceptance are still outside the published result.
+
+- **[DuckBuddy 834 g HD1910 Training Setup](https://github.com/XXuQ/microduck-hd1910-train)** (XXuQ) — Matches the training environment to a specific modified build: fifteen HD1910 servos, a 2S battery, an 834 g DuckBuddy rev-a body and three aluminium reinforcement parts. It publishes motor parameters, 49 task definitions, model-generation scripts, one-command setup and ONNX deployment notes. This directly supports an alternative-hardware build, but it is not a new physical accessory kit; trained policies and real-robot validation are not published.
 
 - **[MicroDuck Low-Cost Bus-Servo Toolchain](https://github.com/liuchongxiao/alpha-1s-servo-motor)** (liuchongxiao / liqiulong) — Flashes low-cost SAMD10 or ATmega8 bus servos with firmware that presents a Feetech SCS-compatible protocol, then provides a GUI for programming, assigning IDs, inspecting registers and bench testing. Firmware source, documentation, scripts and Mac/Windows packages are public. Protocol compatibility does not prove mechanical fit, torque, durability or whole-robot safety; first-time chip unlocking can erase the factory firmware. The GitHub repository preserves attribution to liqiulong's original Gitee project.
 
