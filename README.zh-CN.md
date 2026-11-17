@@ -205,3 +205,4 @@ Microduck 是 Pollen Robotics / Hugging Face 的双足机器人。围绕这只�
 - [Microduck 官方运行软件](https://github.com/pollen-robotics/microduck) — 原版控制程序、设备接口和使用文档。
 - [Microduck 官方训练环境](https://github.com/pollen-robotics/microduck_rl) — 训练动作模型，研究新机身、电机或脚部接触方式对应的运动控制。
 - [Awesome Microduck](https://github.com/joeynyc/awesome-microduck) — 更广泛的 Microduck 社区导航，覆盖软件、仿真、动作模型和相关资源。本目录的分类与条目形式参考该项目，内容聚焦改装和配件。
+- [DuckSpace 在线 3D 物理实验室](https://duckspace.org/?lang=zh)（[源码](https://github.com/aminadav-ai/duckspace)）- 浏览器端 50Hz MuJoCo WebAssembly 仿真测试间，可在上真机前对比不同改装舵机配置（`XL330`、飞特 `HD-1910 / HL-2915 / STS3215`、`XGO-Duck UNO Q`）与齿轮回差对 `.ONNX` 策略（含 MLP 与循环 LSTM）的影响，国内网络可直连访问。纯仿真环境。
