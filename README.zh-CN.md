@@ -134,13 +134,13 @@ Microduck 是 Pollen Robotics / Hugging Face 的双足机器人。围绕这只�
 
 - **[Microduck 双电机虚拟实验室](https://github.com/gnana70/microduck-virtual-lab)**（gnana70）— 在采购舵机和装机前，用同一套固定版本的动作模型比较 XL330 与 HD-1910 的站立、行走偏航、侧推恢复和低电压表现。项目公开了 MuJoCo 脚本和结果文件，但所有数字都来自模拟，不能代替真实电机的扭矩、齿隙、供电和整机测试。
 
-- **[DoitDuck Cove-610 复刻](https://github.com/doit-open-org/DoitDuck)**（doit-open-org）— 沿用 HD1910 版结构，把主控换成 Cove-610，并增加舵机总线连接板与兼作电源管理的 IMU 小板。仓库公开 BOM、两块板的原理图、固件、烧录与舵机设置工具，还提供网页控制、标定、语音和可选视觉功能。动作模型需要另行训练或导入，公开材料也不足以把所有功能写成已经完成长期整机验收。
+- **[DoitDuck Cove-610 复刻](https://github.com/doit-open-org/DoitDuck)**（doit-open-org）— 沿用 HD1910 版结构，把主控换成 Cove-610，并增加舵机总线连接板与兼作电源管理的 IMU 小板。仓库公开 BOM、两块板的原理图、固件、烧录与舵机设置工具，还提供网页控制、标定、语音和可选视觉功能；另有同一项目的[英文文档版](https://github.com/ESP32S-com/DoitDuck-English)，并未改变硬件或固件能力。动作模型需要另行训练或导入，公开材料也不足以把所有功能写成已经完成长期整机验收。
 
 - **[HD1910 行走与起身基线](https://github.com/wchengming1/open-robotics)**（wchengming1）— 保留 Microduck 原始双足结构，为 HD1910 舵机补充电机参数、训练代码和行走、起身策略。项目公开 ONNX 模型、训练检查点和运行脚本，直接服务采用替代电机的复刻者。作者明确说明验证范围限于仿真，实体装机仍要解决供电、总线、关节零位和安全限制。
 
 - **[HD1910 完整训练工程](https://github.com/howe12/MicroDuck_1910_RL)**（howe12）— 按飞特 HD1910 规格重新计算整机质量和执行器参数，并加入平地、粗糙地形任务、195 项 CPU 测试与 ONNX 导出流程。它比只改一个电机参数更接近完整训练工程，但正式 5000 轮训练尚未完成，惯量仍按比例估算，也没有真机运行、零位标定或实体动作验收。
 
-- **[DuckBuddy 834 克 HD1910 训练环境](https://github.com/XXuQ/microduck-hd1910-train)**（XXuQ）— 让训练环境对应一套具体改装硬件：十五只 HD1910 舵机、2S 电池、834 克 DuckBuddy rev-a 机身和三块铝制加强件。仓库公开电机参数、49 个任务定义、模型生成脚本、一键搭建和 ONNX 部署说明，直接服务替代舵机复刻路线。它本身不是新的实体配件包，目前也没有发布训练完成的动作策略或实体鸭验证。
+- **[DuckBuddy 834 克 HD1910 训练环境](https://github.com/XXuQ/microduck-hd1910-train)**（XXuQ）— 让训练环境对应一套具体改装硬件：十五只 HD1910 舵机、2S 电池、834 克 DuckBuddy rev-a 机身和三块铝制加强件。仓库公开电机参数、49 个任务定义、模型生成脚本、一键搭建、关节限位与自碰撞检查、执行器回放、冒烟训练和 ONNX 部署说明。这些验证只能说明环境能运行，不能证明已训出可部署策略或实体鸭已经走通。
 
 - **[MicroDuck 低成本总线舵机工具链](https://github.com/liuchongxiao/alpha-1s-servo-motor)**（liuchongxiao / liqiulong）— 给 SAMD10 或 ATmega8 低成本总线舵机刷入兼容飞特 SCS 通信协议的固件，再用图形工具完成烧录、设 ID、查看寄存器和台架测试。固件源码、说明书、脚本及 Mac/Windows 发行包均已公开。协议兼容不代表机械尺寸、扭矩、寿命和整机安全已经适配；首次解锁芯片还可能擦除原厂固件。GitHub 仓库注明由 liuchongxiao 从 liqiulong 的 Gitee 项目迁移并保留署名。
 
